@@ -33,23 +33,23 @@ ItinerAIry is a full-stack web application that leverages artificial intelligenc
 
 The backend is built using FastAPI, a modern, fast web framework for building APIs with Python. It follows a modular architecture with clear separation of concerns:
 
-- **Main Application**: [`app/main.py`](backend/app/main.py:1) - Entry point with CORS configuration and exception handling
-- **Routes**: [`app/routes/generate.py`](backend/app/routes/generate.py:1) - API endpoint for itinerary generation
-- **Schemas**: [`app/schemas/generate_schema.py`](backend/app/schemas/generate_schema.py:1) - Data validation models
+- **Main Application**: [`app/main.py`](backend/app/main.py) - Entry point with CORS configuration and exception handling
+- **Routes**: [`app/routes/generate.py`](backend/app/routes/generate.py) - API endpoint for itinerary generation
+- **Schemas**: [`app/schemas/generate_schema.py`](backend/app/schemas/generate_schema.py) - Data validation models
 - **Utilities**:
-  - [`app/utils/llm.py`](backend/app/utils/llm.py:1) - LLM API integration with fallback mechanism
-  - [`app/utils/prompt.py`](backend/app/utils/prompt.py:1) - Prompt building logic
-  - [`app/utils/validation.py`](backend/app/utils/validation.py:1) - Request and response validation
-  - [`app/utils/cost.py`](backend/app/utils/cost.py:1) - Cost estimation and budget tracking
+  - [`app/utils/llm.py`](backend/app/utils/llm.py) - LLM API integration with fallback mechanism
+  - [`app/utils/prompt.py`](backend/app/utils/prompt.py) - Prompt building logic
+  - [`app/utils/validation.py`](backend/app/utils/validation.py) - Request and response validation
+  - [`app/utils/cost.py`](backend/app/utils/cost.py) - Cost estimation and budget tracking
 
 ### Frontend Architecture
 
 The frontend is a React-based single-page application built with Vite:
 
-- **Main Application**: [`src/main.tsx`](frontend/src/main.tsx:1) - Entry point with routing configuration
+- **Main Application**: [`src/main.tsx`](frontend/src/main.tsx) - Entry point with routing configuration
 - **Components**: 
-  - [`src/pages/ItineraryForm.tsx`](frontend/src/pages/ItineraryForm.tsx:1) - Main form component for trip planning
-  - [`src/App.tsx`](frontend/src/App.tsx:1) - Root component (currently contains default Vite+React template)
+  - [`src/pages/ItineraryForm.tsx`](frontend/src/pages/ItineraryForm.tsx) - Main form component for trip planning
+  - [`src/App.tsx`](frontend/src/App.tsx) - Root component (currently contains default Vite+React template)
 - **Styling**: Basic CSS styling with responsive design
 
 ## Core Functionality
